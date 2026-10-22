@@ -1,0 +1,30 @@
+{
+  "name": "nocturne",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5198",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 5198",
+    "test": "node tests/browser.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.180.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.7",
+    "@playwright/test": "1.55.1"
+  },
+  "description": "An interactive moonlit lake built with Three.js and Web Audio.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minji-pm/nocturne.git"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
